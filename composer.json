@@ -1,0 +1,30 @@
+{
+  "name": "phpindd/phar-better-tool-example",
+  "description": "Example code for the PHAR better tools talk / blog post",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Holger Woltersdorf",
+      "email": "hw@hollo.me"
+    }
+  ],
+  "support": {
+    "email": "hw@hollo.me",
+    "source": "https://github.com/PHPinDD/phar-better-tool-example"
+  },
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PHPinDD\\PharBetterToolExample\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PHPinDD\\PharBetterToolExample\\Tests\\Unit\\": "tests/Unit/"
+    }
+  }
+}
