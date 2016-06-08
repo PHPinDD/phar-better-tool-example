@@ -10,10 +10,10 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Class HelloWorldCommand
+ * Class SayHelloCommand
  * @package PHPinDD\PharBetterToolExample\Commands
  */
-final class HelloWorldCommand extends Command
+final class SayHelloCommand extends Command
 {
 
 	protected function configure()

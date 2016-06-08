@@ -1,0 +1,13 @@
+{
+	"chmod": "0755",
+	"directories": [
+		"src/",
+		"vendor/"
+	],
+	"blacklist": [
+	],
+	"git-version": "package_version",
+	"main": "bin/main",
+	"output": "build/__PROJECT_NAME_LOWER__.phar",
+	"stub": true
+}

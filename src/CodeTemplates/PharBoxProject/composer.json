@@ -1,0 +1,24 @@
+{
+	"name": "__VENDOR_NAME_LOWER__/__PROJECT_NAME_LOWER__",
+	"description": "__DESCRIPTION__",
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"license": "MIT",
+	"require": {
+		"php": ">=7.0",
+		"symfony/console": "^3.0",
+		"symfony/process": "^3.0",
+		"herrera-io/phar-update": "^2.0",
+		"psr/log": "^1.0"
+	},
+	"autoload": {
+		"psr-4": {
+			"__VENDOR_NAME__\\__PROJECT_NAME__\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"__VENDOR_NAME__\\__PROJECT_NAME__\\Tests\\Unit\\": "tests/Unit/"
+		}
+	}
+}

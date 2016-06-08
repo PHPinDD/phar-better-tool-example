@@ -6,8 +6,10 @@
 
 namespace PHPinDD\PharBetterToolExample;
 
-use PHPinDD\PharBetterToolExample\Commands\Basic\HelloWorldCommand;
 use PHPinDD\PharBetterToolExample\Commands\Basic\PrintConstantsCommand;
+use PHPinDD\PharBetterToolExample\Commands\Basic\SayHelloCommand;
+use PHPinDD\PharBetterToolExample\Commands\Convert\Markdown2HtmlCommand;
+use PHPinDD\PharBetterToolExample\Commands\Generate\InitPharBoxProjectCommand;
 use PHPinDD\PharBetterToolExample\Commands\Generate\QueryHandlerCommand;
 use Symfony\Component\Console\Application;
 
@@ -25,12 +27,14 @@ $app = new Application( 'PHAR better tool', '@package_version@' );
 
 try
 {
-	$app->add( new HelloWorldCommand( 'basic:say-hello' ) );
+	$app->add( new SayHelloCommand( 'basic:say-hello' ) );
 	$app->add( new PrintConstantsCommand( 'basic:print-constants' ) );
 
 	$app->addCommands(
 		[
 			new QueryHandlerCommand( 'generate:query-handler' ),
+			new InitPharBoxProjectCommand( 'generate:phar-box-project' ),
+			new Markdown2HtmlCommand( 'convert:markdown2html' ),
 		]
 	);
 
