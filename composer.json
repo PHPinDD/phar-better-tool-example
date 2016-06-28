@@ -24,12 +24,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"PHPinDD\\PharBetterToolExample\\": "src/"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"PHPinDD\\PharBetterToolExample\\Tests\\Unit\\": "tests/Unit/"
+			"PHPinDD\\PharBetterToolExample\\": "Example4/SymfonyPHAR/src/"
 		}
 	}
 }

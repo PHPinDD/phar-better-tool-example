@@ -15,10 +15,10 @@ use Symfony\Component\Console\Logger\ConsoleLogger;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Class QueryHandlerCommand
+ * Class QueryHandler
  * @package PHPinDD\PharBetterToolExample\Commands\Generate
  */
-final class QueryHandlerCommand extends Command
+final class QueryHandler extends Command
 {
 	protected function configure()
 	{

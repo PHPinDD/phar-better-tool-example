@@ -1,24 +1,23 @@
 <?php
 /**
- * @author PharBetterToolExample
+ * @author hollodotme
  */
 
-namespace __VENDOR_NAME__\__PROJECT_NAME__\Commands;
+namespace PHPinDD\PharBetterToolExample\Commands\Basic;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Class SayHelloCommand
- * @package __VENDOR_NAME__\__PROJECT_NAME__\Commands
+ * Class PrintConstants
+ * @package PHPinDD\PharBetterToolExample\Commands
  */
-final class SayHelloCommand extends Command
+final class PrintConstants extends Command
 {
-
 	protected function configure()
 	{
-		$this->setDescription( 'Says hello.' );
+		$this->setDescription( 'Prints the defined constants in bin/main.php' );
 	}
 
 	/**
@@ -29,7 +28,8 @@ final class SayHelloCommand extends Command
 	 */
 	protected function execute( InputInterface $input, OutputInterface $output )
 	{
-		$output->writeln( 'HELLO WORLD!' );
+		$output->writeln( 'PHAR_DIR: ' . PHAR_DIR );
+		$output->writeln( 'WORKING_DIR: ' . WORKING_DIR );
 
 		return 0;
 	}

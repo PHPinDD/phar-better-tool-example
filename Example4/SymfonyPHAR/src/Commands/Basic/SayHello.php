@@ -10,14 +10,15 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Class PrintConstantsCommand
+ * Class SayHello
  * @package PHPinDD\PharBetterToolExample\Commands
  */
-final class PrintConstantsCommand extends Command
+final class SayHello extends Command
 {
+
 	protected function configure()
 	{
-		$this->setDescription( 'Prints the defined constants in bin/main' );
+		$this->setDescription( 'Says hello.' );
 	}
 
 	/**
@@ -28,8 +29,7 @@ final class PrintConstantsCommand extends Command
 	 */
 	protected function execute( InputInterface $input, OutputInterface $output )
 	{
-		$output->writeln( 'PHAR_DIR: ' . PHAR_DIR );
-		$output->writeln( 'WORKING_DIR: ' . WORKING_DIR );
+		$output->writeln( 'HELLO WORLD!' );
 
 		return 0;
 	}

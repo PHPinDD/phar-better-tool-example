@@ -1,17 +1,17 @@
 <?php
 /**
- * @author hollodotme
+ * @author PharBetterToolExample
  */
 
-namespace PHPinDD\PharBetterToolExample\Commands\Basic;
+namespace __VENDOR_NAME__\__PROJECT_NAME__\Commands;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Class SayHelloCommand
- * @package PHPinDD\PharBetterToolExample\Commands
+ * Class SayHello
+ * @package __VENDOR_NAME__\__PROJECT_NAME__\Commands
  */
 final class SayHelloCommand extends Command
 {

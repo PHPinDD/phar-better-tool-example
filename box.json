@@ -1,13 +1,13 @@
 {
 	"chmod": "0755",
 	"directories": [
-		"src/",
+		"Example4/SymfonyPHAR/src/",
 		"vendor/"
 	],
 	"blacklist": [
 	],
 	"git-version": "package_version",
-	"main": "bin/main",
-	"output": "build/bettertool.phar",
+	"main": "Example4/SymfonyPHAR/bin/main.php",
+	"output": "Example4/symfony.phar",
 	"stub": true
 }

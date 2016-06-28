@@ -19,10 +19,10 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
 /**
- * Class InitPharBoxProjectCommand
+ * Class InitPharBoxProject
  * @package PHPinDD\PharBetterToolExample\Commands\Generate
  */
-final class InitPharBoxProjectCommand extends Command
+final class InitPharBoxProject extends Command
 {
 	protected function configure()
 	{

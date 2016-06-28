@@ -11,10 +11,10 @@ use Symfony\Component\Console\Logger\ConsoleLogger;
 use Symfony\Component\Console\Output\OutputInterface;
 
 /**
- * Class Markdown2HtmlCommand
+ * Class Markdown2Html
  * @package PHPinDD\PharBetterToolExample\Commands\Convert
  */
-final class Markdown2HtmlCommand extends Command
+final class Markdown2Html extends Command
 {
 	protected function configure()
 	{
