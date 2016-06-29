@@ -1,5 +1,7 @@
 {
+	"algorithm": "OPENSSL",
 	"chmod": "0755",
+	"compression": "GZ",
 	"directories": [
 		"Example4/SymfonyPHAR/src/",
 		"vendor/"
@@ -7,7 +9,9 @@
 	"blacklist": [
 	],
 	"git-version": "package_version",
+	"intercept": true,
+	"key": "private.key",
 	"main": "Example4/SymfonyPHAR/bin/main.php",
-	"output": "Example4/symfony.phar",
+	"output": "temp/symfony.phar",
 	"stub": true
 }

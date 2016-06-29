@@ -66,14 +66,7 @@ final class SkeletonCodeGenerator
 		}
 		else
 		{
-			if ( !mkdir( $directory, 0755, true ) )
-			{
-				$this->logger->error( 'Could not create directory: ' . $directory );
-			}
-			else
-			{
-				$this->logger->info( 'Directory: ' . $directory . ' created.' );
-			}
+			@mkdir( $directory, 0755, true );
 		}
 	}
 

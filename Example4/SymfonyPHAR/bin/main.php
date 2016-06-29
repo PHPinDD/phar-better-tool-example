@@ -10,14 +10,13 @@ use PHPinDD\PharBetterToolExample\Commands\Basic\SayHello;
 use PHPinDD\PharBetterToolExample\Commands\Convert\Markdown2Html;
 use PHPinDD\PharBetterToolExample\Commands\Generate\InitPharBoxProject;
 use PHPinDD\PharBetterToolExample\Commands\Generate\QueryHandler;
+use PHPinDD\PharBetterToolExample\Commands\Update\SelfUpdate;
 use Symfony\Component\Console\Application;
 
 error_reporting( -1 );
 ini_set( 'display_errors', '1' );
 
 require_once(__DIR__ . '/../../../vendor/autoload.php');
-
-\Phar::interceptFileFuncs();
 
 define( 'PHAR_DIR', dirname( __DIR__ ) );
 define( 'WORKING_DIR', getcwd() );
@@ -34,6 +33,7 @@ try
 			new QueryHandler( 'generate:query-handler' ),
 			new InitPharBoxProject( 'generate:phar-box-project' ),
 			new Markdown2Html( 'convert:markdown2html' ),
+			new SelfUpdate( 'self-update' ),
 		]
 	);
 
