@@ -35,4 +35,7 @@ mv "phpdox-$PHPDOX_VERSION.phar" phpdox.phar
 # Box project
 curl -LSs https://box-project.github.io/box2/installer.php | php
 
+# Phive
+wget https://phar.io/releases/phive.phar
+
 chmod +x ./*.phar

@@ -7,7 +7,6 @@ namespace PHPinDD\PharBetterToolExample\Commands\Update;
 
 use Herrera\Phar\Update\Manager;
 use Herrera\Phar\Update\Manifest;
-use Herrera\Phar\Update\Update;
 use Herrera\Version\Parser;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -42,11 +41,6 @@ final class SelfUpdate extends Command
 
 		if ( !is_null( $update ) )
 		{
-			$update = new Update(
-				$update->getName(), $update->getSha1(), $update->getUrl(), $update->getVersion(),
-				__DIR__ . '/symfony.phar.pubkey'
-			);
-
 			$recentVersion = $update->getVersion();
 
 			echo sprintf(
