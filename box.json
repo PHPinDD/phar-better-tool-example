@@ -12,6 +12,6 @@
 	"intercept": true,
 	"key": "private.key",
 	"main": "Example4/SymfonyPHAR/bin/main.php",
-	"output": "temp/symfony.phar",
+	"output": "temp/symfony_1.0.0.phar",
 	"stub": true
 }
